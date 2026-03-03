@@ -387,7 +387,7 @@ def run_bot():
         logger.error(f"Ошибка при запуске бота: {e}")
 
 def run_flask():
-    port = int(os.environ.get("PORT", 10000))
+    port = int(os.environ.get("PORT", 10001))  # Изменил на 10001
     flask_app.run(host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
